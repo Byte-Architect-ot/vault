@@ -1,189 +1,135 @@
-# 🏥 Vital Vault— Decentralized AI-Powered Healthcare Record System
+Here is the improvised **README.md** for **VitalVault AI**.
 
-[![React](https://img.shields.io/badge/React-18+-61DAFB?style=flat&logo=react)](https://react.dev/)
-[![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=flat&logo=nodedotjs)](https://nodejs.org/)
-[![Solidity](https://img.shields.io/badge/Solidity-0.8.20-363636?style=flat&logo=solidity)](https://soliditylang.org/)
-[![Hardhat](https://img.shields.io/badge/Hardhat-Development-yellow?style=flat&logo=hardhat)](https://hardhat.org/)
-[![Gemini AI](https://img.shields.io/badge/Gemini-2.5_Flash_Lite-8E75B2?style=flat&logo=google)](https://deepmind.google/technologies/gemini/)
-[![IPFS](https://img.shields.io/badge/Storage-IPFS_Pinata-65C2CB?style=flat&logo=ipfs)](https://ipfs.tech/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-
-> *A secure, decentralized medical record exchange platform that leverages Blockchain for immutable access control and Generative AI (Gemini 2.5) for intelligent health insights, predictive analytics, and automated clinical summaries.*
-
-### ▶️ Demo Video  
-[![Watch the video](https://i.ytimg.com/vi/1RXNAA9KE94/hqdefault.jpg)](https://youtu.be/1RXNAA9KE94)
-
+I have updated the technology stack to match the **Microsoft Azure AI** & **Polygon** architecture we defined earlier, refined the problem statement to be punchier, and highlighted the "Hero" features like the Emergency Break-Glass protocol.
 
 ---
+
+# 🏥 VitalVault AI — Intelligent Clinical Copilot & Decentralized Record System
+
+> **"AI-Powered Clinical Intelligence with Patient-Controlled Access."**
+> *A secure, privacy-first platform that uses Microsoft Azure AI to transform scattered medical records into life-saving insights, while using Blockchain strictly for tamper-proof consent logging.*
 
 ## 🎯 Problem Statement
 
-The modern healthcare ecosystem confronts critical data challenges that impact patient care and data security:
+The modern healthcare ecosystem confronts a "Data Silo Crisis" that endangers patient lives:
 
-### The Data Silo Crisis
-Medical records are fragmented across isolated hospital databases, preventing a unified view of a patient's health history.
-
-### Key Challenges
-❌ **Fragmentation**: Records are locked in distinct provider systems, leading to redundant tests and delayed diagnoses.  
-❌ **Lack of Ownership**: Patients do not truly own their data; accessing it requires bureaucracy and physical visits.  
-❌ **Privacy Risks**: Centralized servers are single points of failure, vulnerable to massive data breaches (e.g., ransomware attacks).  
-❌ **Information Overload**: Physicians spend 35% of their time reviewing unstructured PDF reports instead of treating patients.  
-❌ **Interoperability Gap**: Sharing records between specialists or across borders is slow, insecure, and manual.
+* **❌ Data Fragmentation:** Patient history is trapped in isolated databases and unstructured PDFs, forcing doctors to hunt for context.
+* **❌ Cognitive Overload:** Physicians spend **35% of their time** reviewing records, leading to burnout and missed critical details.
+* **❌ Clinical Danger:** Lack of immediate history leads to fatal drug interactions and redundant, costly testing.
+* **❌ Access Deadlock:** Patients are locked out of their own data, unable to share vital history during life-saving emergencies.
 
 ---
 
-## ✨ Our Solution: The Triad of Trust & Intelligence
+## ✨ The Solution: Trust + Intelligence
 
-**MediChain AI** bridges the gap between security and utility by orchestrating three cutting-edge technologies:
+**VitalVault AI** replaces "trusting the hospital" with "trusting the architecture." We combine **Confidential Computing** with **Decentralized Control**.
 
-1.  **Blockchain (Ethereum/Polygon)**: Ensures decentralized identity, immutable audit logs, and patient-sovereign access control via Smart Contracts.
-2.  **IPFS (InterPlanetary File System)**: Provides secure, distributed, and encrypted storage for sensitive medical documents, eliminating central servers.
-3.  **Google Gemini 2.5 AI**: Delivers instant analysis, summarization, and trend detection, turning raw data into actionable clinical insights.
+### 1. 🛡️ The Intelligent Medical Vault
 
-### 🚀 Core Features
+* **Unified History:** Aggregates lab reports, X-rays, and prescriptions into one secure, longitudinal record.
+* **Privacy-First:** Data is encrypted (AES-256) and stored on **IPFS** (Decentralized Storage).
+* **Azure Confidential Computing:** AI analysis occurs inside secure enclaves, ensuring data is never exposed in plain text during processing.
 
-#### 🛡️ Secure & Decentralized
-- **Patient Sovereignty**: Patients grant `requestAccess` and `revokeAccess` to doctors via Smart Contracts (`AccessControl.sol`).
-- **End-to-End Encryption**: Files are encrypted (AES-256) client-side before IPFS upload; only authorized keys can decrypt them.
-- **Immutable Audit Trail**: Every view, share, and upload is recorded on-chain, ensuring 100% transparency.
+### 2. 🧠 AI Critical Risk Alerts (The "Hero" Feature)
 
-#### 🧠 AI-Powered Insights (Gemini 2.5 Flash-Lite)
-- **Instant Summarization**: Converts complex lab reports (PDF/Images) into structured JSON summaries.
-- **Trend Analysis**: Automatically tracks vitals (e.g., HbA1c, Blood Pressure) over time from uploaded history.
-- **Clinical Dashboards**: Provides doctors with "At a Glance" patient health snapshots, highlighting critical changes since the last visit.
-- **Privacy-First AI**: AI processing happens on the backend with strict data minimization; no data is used for model training.
+Powered by **Azure AI Language (Text Analytics for Health)** & **GPT-4o**:
 
-#### 👥 Role-Based Ecosystem
-- **Patient Portal**: Upload records, manage doctor permissions, view personal health AI trends.
-- **Doctor Dashboard**: Verify credentials, request patient access, view consolidated clinical timelines.
-- **Admin Panel**: Verify doctor licenses, monitor network health, and manage system parameters.
+* **Active Flagging:** Automatically detects abnormal lab values (e.g., *"Creatinine spiked 20% since last visit"*).
+* **Interaction Checks:** Cross-references new prescriptions against existing history to block dangerous drug interactions.
+* **Structured Standardization:** Converts messy PDFs into standard FHIR-compatible JSON data.
+
+### 3. 🚨 Emergency "Break-Glass" Protocol
+
+* **Life-Saving Access:** In unconscious situations, verified ER doctors can trigger temporary access.
+* **Immutable Audit:** The event is instantly logged on the **Polygon Blockchain** for transparency.
+* **Instant Notification:** The patient and next of kin receive an immediate SMS/Email alert.
 
 ---
 
 ## 🏗️ System Architecture
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                      FRONTEND LAYER                         │
-│           React + Vite + Tailwind (Opella Theme)            │
-│                                                             │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
-│  │    Patient   │  │    Doctor    │  │     Admin    │       │
-│  │   Dashboard  │  │   Dashboard  │  │     Panel    │       │
-│  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘       │
-│         │                 │                 │               │
-└─────────┼─────────────────┼─────────────────┼───────────────┘
-          │                 │                 │
-          ▼                 ▼                 ▼
-┌─────────────────────────────────────────────────────────────┐
-│                      BACKEND LAYER                          │
-│               Node.js + Express (REST API)                  │
-│                                                             │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
-│  │  AI Service  │  │ IPFS Service │  │  Auth & BAM  │       │
-│  │ (Gemini 2.5) │  │   (Pinata)   │  │  (Middleware)│       │
-│  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘       │
-└─────────┼─────────────────┼─────────────────┼───────────────┘
-          │                 │                 │
-          ▼                 ▼                 ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    DECENTRALIZED LAYER                      │
-│                                                             │
-│   ┌──────────────┐           ┌──────────────────────┐       │
-│   │   Ethereum   │           │         IPFS         │       │
-│   │ Smart Contract│◄────────►│  (Encrypted Storage) │       │
-│   │(AccessControl)│          │      (Pinata)        │       │
-│   └──────────────┘           └──────────────────────┘       │
-└─────────────────────────────────────────────────────────────┘
+```mermaid
+graph TD
+    User[Patient/Doctor] -->|Frontend| NextJS[Next.js Dashboard]
+    
+    subgraph "Microsoft Azure Cloud (Intelligence Layer)"
+        NextJS -->|API Request| AppService[Azure App Service]
+        AppService -->|Raw Text| HealthAI[Azure Text Analytics for Health]
+        AppService -->|Reasoning| GPT[Azure OpenAI GPT-4o]
+        AppService -->|Metadata| Cosmos[Azure Cosmos DB]
+    end
+    
+    subgraph "Decentralized Web3 Layer (Security)"
+        NextJS -->|Encrypted Files| IPFS[IPFS Storage]
+        NextJS -->|Access Control| Poly[Polygon Smart Contract]
+    end
+    
+    HealthAI -->|Entities| GPT
+    GPT -->|Risk Alerts| NextJS
+
 ```
 
 ---
 
 ## 🛠️ Technology Stack
 
+### AI & Intelligence (Microsoft Stack)
+
+| Technology | Purpose |
+| --- | --- |
+| **Azure OpenAI (GPT-4o)** | Complex medical reasoning, summarization, and trend analysis. |
+| **Azure AI Language** | "Text Analytics for Health" for extracting meds, diagnoses, and dosages. |
+| **Azure Confidential Computing** | Secure enclaves for processing sensitive data. |
+
 ### Blockchain & Storage
-| Technology | Version | Purpose |
-|-----------|---------|---------|
-| **Solidity** | ^0.8.20 | Smart Contract Logic |
-| **Hardhat** | Latest | Development, Testing, Deployment |
-| **Ethers.js** | ^6.0 | Blockchain Interaction |
-| **IPFS (Pinata)** | - | Decentralized File Storage |
-| **Wagmi/Viem** | ^2.0 | React Hooks for Ethereum |
 
-### Backend & AI
-| Technology | Version | Purpose |
-|-----------|---------|---------|
-| **Node.js** | 18+ | Runtime Environment |
-| **Express** | ^4.18 | RESTful API Framework |
-| **Gemini AI** | 1.5/2.5 | generative-ai SDK for Insights |
-| **Multer** | - | File Upload Handling |
-| **PDF-Parse** | - | Document Text Extraction |
+| Technology | Purpose |
+| --- | --- |
+| **Polygon PoS** | Low-cost, high-speed Smart Contracts for access control & audit logs. |
+| **Solidity ^0.8.20** | Smart Contract logic (`AccessControl.sol`, `EmergencyLog.sol`). |
+| **IPFS (Pinata)** | Encrypted, decentralized file storage for medical PDFs/Images. |
+| **Wagmi / Viem** | React hooks for Web3 interaction. |
 
-### Frontend
-| Technology | Version | Purpose |
-|-----------|---------|---------|
-| **React** | 18 | UI Component Library |
-| **Vite** | Latest | Build Tool & Dev Server |
-| **Tailwind CSS** | ^3.4 | Utility-First Styling |
-| **Lucide React** | - | Iconography |
-| **Recharts** | - | Data Visualization Charts |
+### Full Stack
 
----
-
-## 🤖 Deep Dive: AI & Blockchain Workflows
-
-### 1. Smart Contract Access Control (`AccessControl.sol`)
-The core security layer. It maps Patients → Doctors → Permissions.
-*   `requestAccess(address _patient, string _reason)`: Doctor initiates a request.
-*   `approveAccess(address _doctor)`: Patient signs a transaction to approve.
-*   `revokeAccess(address _doctor)`: Patient removes access instantly.
-*   `logAccess(address _patient)`: Records every view on-chain for audit.
-
-### 2. AI Insight Generation Flow
-How we turn PDF reports into clinical value:
-1.  **Ingestion**: User uploads PDF/Image. Backend parses text via `pdf-parse` or Gemini Vision.
-2.  **Context Building**: Previous records are retrieved to build a "Patient History Context".
-3.  **Prompt Engineering**: A constrained prompt instructs Gemini to output **strictly JSON**:
-    ```json
-    {
-      "healthSummary": "...",
-      "vitalTrends": { "hbA1c": "decreasing" },
-      "recommendations": ["..."]
-    }
-    ```
-4.  **Verification**: The JSON is parsed and validated before being sent to the frontend Dashboard.
+| Technology | Purpose |
+| --- | --- |
+| **Next.js 14** | React Framework for SEO and server-side rendering. |
+| **Tailwind CSS + Shadcn/ui** | Enterprise-grade medical UI components. |
+| **Node.js / Express** | Backend API for orchestration. |
+| **Azure Cosmos DB** | NoSQL database for non-sensitive application metadata. |
 
 ---
 
 ## 📂 Project Structure
 
-```
-MediChain-AI/
+```bash
+VitalVault-AI/
 │
-├─ contracts/                 # Hardhat Environment
+├─ contracts/                 # Hardhat/Foundry Environment
 │   ├── contracts/
-│   │   ├── AccessControl.sol # Permission Logic
-│   │   ├── PatientRegistry.sol # Identity Logic
-│   │   └── DoctorRegistry.sol # Verification Logic
-│   └── scripts/              # Deployment Scripts
+│   │   ├── AccessControl.sol # Permission Logic (Patient -> Doctor)
+│   │   ├── EmergencyLog.sol  # "Break-Glass" Audit Trail
+│   │   └── Identity.sol      # DID Management
+│   └── scripts/              # Deployment Scripts (Polygon Amoy)
 │
-├─ backend/                   # Node.js API
+├─ backend/                   # Node.js + Azure SDK
 │   ├── src/
+│   │   ├── controllers/      # AI orchestration logic
 │   │   ├── services/
-│   │   │   ├── ai.service.js   # Gemini Integration
-│   │   │   ├── ipfs.service.js # Pinata Integation
-│   │   │   └── blockchain.service.js # Ethers.js Logic
+│   │   │   ├── azureAI.js    # GPT-4o & Text Analytics Config
+│   │   │   └── ipfs.js       # Pinata Integration
 │   │   └── routes/           # API Endpoints
-│   └── .env                  # Keys & Config
 │
-└── frontend/                 # React App
+└── frontend/                 # Next.js App
     ├── src/
-    │   ├── pages/            # Role-Based Views
-    │   ├── components/       # Reusable UI
-    │   ├── styles/           # Opella Theme System
-    │   └── assets/
-    └── .env                  # Contract Address
+    │   ├── components/       # Shadcn UI Components
+    │   ├── app/
+    │   │   ├── dashboard/    # Doctor Clinical View
+    │   │   ├── vault/        # Patient Record View
+    │   │   └── emergency/    # Break-Glass Trigger Page
+    │   └── lib/              # Utils & Azure/Web3 Clients
+
 ```
 
 ---
@@ -191,92 +137,78 @@ MediChain-AI/
 ## 🚀 Quick Start
 
 ### Prerequisites
-- **Node.js 18+** installed
-- **MetaMask** browser extension
-- **Pinata** Account (Free tier works)
-- **Google AI Studio** API Key
 
-### Step 1: Blockchain Deployment 🔗
+* **Node.js 18+**
+* **Azure Subscription** (OpenAI & Cognitive Services enabled)
+* **Pinata Account** (For IPFS)
+* **MetaMask** (Configured for Polygon Amoy Testnet)
+
+### 1. Clone & Install
+
 ```bash
-# Navigate to contracts
-cd contracts
+git clone https://github.com/yourusername/vitalvault-ai.git
+cd vitalvault-ai
 npm install
 
-# Start local blockchain
-npx hardhat node
-
-# Open a NEW terminal
-# Deploy contracts to local network
-npx hardhat run scripts/deploy.js --network localhost
-
-# COPY the deployed "MediChain Address" output!
 ```
 
-### Step 2: Backend Configuration ⚙️
-```bash
-cd backend
-npm install
+### 2. Environment Setup
 
-# Setup Environment
-cp .env.example .env
-```
-**Edit `.env` with your keys:**
+Create a `.env.local` file in the root:
+
 ```env
-PORT=3001
+# Microsoft Azure AI
+AZURE_OPENAI_API_KEY=your_key
+AZURE_OPENAI_ENDPOINT=your_endpoint
+AZURE_LANGUAGE_KEY=your_text_analytics_key
+
+# Blockchain & Storage
+NEXT_PUBLIC_POLYGON_RPC=https://rpc-amoy.polygon.technology/
 PINATA_API_KEY=your_pinata_key
-PINATA_SECRET_API_KEY=your_pinata_secret
-GEMINI_API_KEY=your_google_ai_key
-RPC_URL=http://127.0.0.1:8545
-PRIVATE_KEY=your_hardhat_account_0_private_key
-CONTRACT_ADDRESS=address_from_step_1
-```
-**Start Server:**
-```bash
-npm run dev
+PINATA_SECRET=your_pinata_secret
+
+# Database
+COSMOS_DB_CONNECTION_STRING=your_connection_string
+
 ```
 
-### Step 3: Frontend Launch 🎨
-```bash
-cd frontend
-npm install
+### 3. Run the Development Server
 
-# Setup Environment
-cp .env.example .env
-```
-**Edit `.env`:**
-```env
-VITE_API_URL=http://localhost:3001/api
-VITE_CONTRACT_ADDRESS=address_from_step_1
-```
-**Start App:**
 ```bash
 npm run dev
+# Open http://localhost:3000
+
 ```
-**Visit:** `http://localhost:5173`
+
+### 4. Smart Contract Deployment
+
+```bash
+cd contracts
+npx hardhat run scripts/deploy.js --network polygonAmoy
+# Copy the contract address into your .env file
+
+```
 
 ---
 
-## 📡 API Reference
+## 🤖 AI Workflow Example
 
-#### Patient Routes
-*   `POST /api/patient/register`: Register wallet on-chain.
-*   `POST /api/file/upload`: Upload & Encrypt file to IPFS.
-*   `GET /api/patient/records`: Fetch decrypted record metadata.
-*   `GET /api/patient/insights`: Get AI-generated health summaries.
+**Input:** A 15-page PDF discharge summary uploaded by the patient.
 
-#### Doctor Routes
-*   `POST /api/doctor/verify`: Submit license for verification.
-*   `POST /api/doctor/access-request`: Initiate access request.
-*   `GET /api/doctor/patients`: List authorized patients.
+1. **Ingestion:** File is encrypted -> uploaded to IPFS.
+2. **Processing:**
+* **Azure AI Language** extracts entities: `{"Medication": "Lisinopril", "Dosage": "10mg", "Frequency": "Daily"}`.
+* **GPT-4o** analyzes context: *"Patient has history of hyperkalemia."*
+3. **Display:** Doctor sees this flag immediately on the dashboard timeline.
 
 ---
 
 ## 📝 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License**.
 
 ---
 
 <p align="center">
-  <strong>⚡ Secure Records. Intelligent Insights. Decentralized Future. ⚡</strong>
+<strong>⚡ VitalVault AI: Securing Health. Saving Time. Saving Lives. ⚡</strong>
 </p>
