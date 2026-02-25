@@ -1,0 +1,45 @@
+# Add .env files to gitignore
+backend/.env
+frontend/.env
+contracts/.env
+.env
+.env.example
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Build outputs
+dist/
+build/
+*/dist/
+*/build/
+
+# Hardhat
+cache/
+artifacts/
+contracts/cache/
+contracts/artifacts/
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+.cache/
